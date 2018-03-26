@@ -10,9 +10,6 @@
         <item name="checkboxStyle">@style/MyCheckBoxStyle</item>
         <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
 
-        <!-- Answer correct - Green - #9DBF9E -->
-        <!-- Answer incorrect - red - #EE7674 -->
-
     </style>
     <!-- Applies text color to all radio buttons -->
     <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
