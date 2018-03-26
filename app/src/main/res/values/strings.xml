@@ -44,6 +44,10 @@
     <string name="question1_answer_2">Edison</string>
     <!-- Question 2 Answer - 100 chars -->
     <string name="question2_answer">Proton, Neutron, Electron</string>
+    <!-- Question 2 3 right, some wrong answers -->
+    <string name="question2_answer_someWrong">You got all three correct, but some entries are incorrect. Look above to learn more.</string>
+    <!-- Question 2 more than 3 points-->
+    <string name="question2_wrongPoints">How did you get more than 3 points on this question? Please check your answers and try again.</string>
     <!-- Question 3 Answer - 200 chars -->
     <string name="question3_answer">Light amplification by stimulated emission of radiation</string>
     <!-- Question 4 Answer - 100 chars -->

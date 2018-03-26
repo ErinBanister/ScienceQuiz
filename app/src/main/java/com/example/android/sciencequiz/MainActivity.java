@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
         checkEditText(userEntry, getString(R.string.question1_answer), getString(R.string.question1_answer_2), R.id.answer1);
 
         // compare answer2 to correct answer
-        int question2 = 0;  //there are 3 right answers in this question. This keeps total point value
-        //to ensure question is marked wrong if <3 points are received.
+        int question2 = 0;  //there are 3 right answers in this question. This keeps total point value to ensure question is marked wrong if <3 points are received.
+        int question2_wrong = 0;
 
         CheckBox checkbox = findViewById(R.id.quiz_answer_2a);
 
@@ -90,21 +90,28 @@ public class MainActivity extends AppCompatActivity {
         checkbox = findViewById(R.id.quiz_answer_2d);
         if (checkbox.isChecked()) {
             setCorrect(R.id.quiz_answer_2d, false);
+            question2_wrong = question2_wrong+1;
         }
 
         checkbox = findViewById(R.id.quiz_answer_2e);
         if (checkbox.isChecked()) {
             setCorrect(R.id.quiz_answer_2e, false);
+            question2_wrong = question2_wrong+1;
         }
 
         if (question2 < 3) {
             answer = getString(R.string.question2_answer);
             updateAnswer(R.id.answer2, answer, false);
         } else if (question2 == 3) {
-            answer = getString(R.string.correct_answer);
-            updateAnswer(R.id.answer2, answer, true);
+            if (question2_wrong>0) {
+                answer = getString(R.string.correct_answer);
+                updateAnswer(R.id.answer2, answer, true);
+            } else {
+                answer = getString(R.string.correct_answer);
+                updateAnswer(R.id.answer2, answer, true);
+            }
         } else {
-            Toast toast = Toast.makeText(getApplicationContext(), "How did you get more than 3 points on this question? Please check your answers and try again.", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.question2_wrongPoints, Toast.LENGTH_SHORT);
             toast.show();
             return;
         }
