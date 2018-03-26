@@ -19,7 +19,7 @@
     <!-- Question 2 Option 5, 20 chars -->
     <string name="question2e">Squiggle</string>
     <!-- Question 3 text, 150 chars -->
-    <string name="question3">The word laser began as an acronym. What does is stand for?</string>
+    <string name="question3">The word laser began as an acronym. What does it stand for?</string>
     <!-- Question 4 text, 100 chars -->
     <string name="question4">What direction does electricity flow?</string>
     <!-- Question 4 Option 1, 50 chars -->

@@ -103,9 +103,11 @@ public class MainActivity extends AppCompatActivity {
             answer = getString(R.string.question2_answer);
             updateAnswer(R.id.answer2, answer, false);
         } else if (question2 == 3) {
+            //check if there are wrong answers included as well
             if (question2_wrong>0) {
-                answer = getString(R.string.correct_answer);
-                updateAnswer(R.id.answer2, answer, true);
+                answer = getString(R.string.question2_answer_someWrong);
+                ((TextView) findViewById(R.id.answer2)).setText(answer);
+                setCorrect(R.id.answer2, true);
             } else {
                 answer = getString(R.string.correct_answer);
                 updateAnswer(R.id.answer2, answer, true);
