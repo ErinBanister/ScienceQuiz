@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <!-- Application Title, 50 chars -->
+    <string name="app_name">Science Quiz</string>
+    <!-- Application Header, 100 chars -->
+    <string name="quiz_title">Test Your Science Knowledge!</string>
+    <!-- Question 1 text, 100 chars -->
+    <string name="question1">Who holds the most US Patents?</string>
+    <!-- Question 2 text, 100 chars -->
+    <string name="question2">What are the basic particles of the atom?</string>
+    <!-- Question 2 Option 1, 20 chars -->
+    <string name="question2a">Neutron</string>
+    <!-- Question 2 Option 2, 20 chars -->
+    <string name="question2b">Proton</string>
+    <!-- Question 2 Option 3, 20 chars -->
+    <string name="question2c">Electron</string>
+    <!--Question 2 Option 4, 20 chars-->
+    <string name="question2d">Quark</string>
+    <!-- Question 2 Option 5, 20 chars -->
+    <string name="question2e">Squiggle</string>
+    <!-- Question 3 text, 150 chars -->
+    <string name="question3">The word laser began as an acronym. What does is stand for?</string>
+    <!-- Question 4 text, 100 chars -->
+    <string name="question4">What direction does electricity flow?</string>
+    <!-- Question 4 Option 1, 50 chars -->
+    <string name="question4a">Left to Right</string>
+    <!-- Question 4 Option 2, 50 chars-->
+    <string name="question4b">Positive to Negative</string>
+    <!-- Question 4 Option 3, 50 chars -->
+    <string name="question4c">Up to Down</string>
+    <!-- Question 4 Option 4, 50 chars -->
+    <string name="question4d">Negative to Positive</string>
+    <!-- Question 5 text, 100 chars -->
+    <string name="question5">Who holds two Nobel Prizes for science?</string>
+    <!-- Question 6 text, 150 chars -->
+    <string name="question6">Is time travel mathematically possible?</string>
+    <!-- Question 6a Option 1 50 chars -->
+    <string name="question6a">True</string>
+    <!-- Question 6b Option 2 50 chars -->
+    <string name="question6b">False</string>
+    <!-- Question 1 Answer - 100 chars -->
+    <string name="question1_answer">Thomas Edison</string>
+    <!-- Question 1 Answer - 100 chars -->
+    <string name="question1_answer_2">Edison</string>
+    <!-- Question 2 Answer - 100 chars -->
+    <string name="question2_answer">Proton, Neutron, Electron</string>
+    <!-- Question 3 Answer - 200 chars -->
+    <string name="question3_answer">Light amplification by stimulated emission of radiation</string>
+    <!-- Question 4 Answer - 100 chars -->
+    <string name="question4_answer">Negative to positive</string>
+    <!-- Question 5 Answer - 100 chars -->
+    <string name="question5_answer">Marie Curie</string>
+    <!-- Question 5 Answer - 100 chars -->
+    <string name="question5_answer_2">Curie</string>
+    <!-- Question 6 Answer - 200 chars -->
+    <string name="question6_answer">Time travel is mathematically possible, but is still impossible due to our inability to warp space-time.</string>
+    <!-- Emtpy string - 0 chars-->
+    <string name="total_empty">""</string>
+    <!-- Total field text. 200 chars -->
+    <string name="total">Total Score: <xliff:g name="score">%d</xliff:g></string>
+    <!-- Submit button text - 10 chars -->
+    <string name="submit">Submit</string>
+    <!-- Reset button text - 10 chars -->
+    <string name="reset">Reset</string>
+    <!-- Answer Hint - 20 chars -->
+    <string name="answer_hint">Answer here</string>
+    <!--Correct answer text - 10 chars -->
+    <string name="correct_answer">Correct!</string>
+    <!--Incorrect Answer text - 10 chars -->
+    <string name="incorrect_answer">Incorrect.</string>
+</resources>

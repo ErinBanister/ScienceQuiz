@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#616161</item>
+        <item name="colorAccent">#C9B7AD</item>
+        <item name="android:textColor">#546E7A</item>
+        <item name="checkboxStyle">@style/MyCheckBoxStyle</item>
+        <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
+
+        <!-- Answer correct - Green - #9DBF9E -->
+        <!-- Answer incorrect - red - #EE7674 -->
+
+    </style>
+    <!-- Applies text color to all radio buttons -->
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">#546E7A</item>
+    </style>
+
+    <!-- Applies text color to all check buttons -->
+    <style name="MyCheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">#546E7A</item>
+    </style>
+
+</resources>
