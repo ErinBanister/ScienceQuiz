@@ -26,9 +26,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    //set currentPoints value to 0 for new scoring session
     public int currentPoints = 0;
-
     public Button resetButton;
     public EditText quizAnswer1;
     public TextView answer1;

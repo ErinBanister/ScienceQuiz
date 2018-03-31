@@ -12,5 +12,4 @@
     <dimen name="checkbox_padding_internal">16dp</dimen>
     <dimen name="radiobox_padding">16px</dimen>
     <dimen name="radiobox_padding_internal">8dp</dimen>
-
 </resources>
