@@ -6,4 +6,5 @@
     <color name="correct">#9DBF9E</color>
     <color name="incorrect">#EE7674</color>
     <color name="standardText">#546E7A</color>
+    <color name="headingText">#004D40</color>
 </resources>

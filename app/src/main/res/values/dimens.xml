@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="LinearLayout_padding">8dp</dimen>
+    <dimen name="textview_padding">16dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="medium_text_size">20sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="imageview_padding">16dp</dimen>
+    <dimen name="edittext_sidepadding">16dp</dimen>
+    <dimen name="edittext_toppadding">8dp</dimen>
+    <dimen name="checkbox_margin">16dp</dimen>
+    <dimen name="checkbox_padding_internal">16dp</dimen>
+    <dimen name="radiobox_padding">16px</dimen>
+    <dimen name="radiobox_padding_internal">8dp</dimen>
+
+</resources>
