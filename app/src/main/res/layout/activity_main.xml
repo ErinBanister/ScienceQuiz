@@ -9,8 +9,8 @@ android:id="@+id/myScroll">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
+        android:paddingTop="@dimen/LinearLayout_padding"
+        android:paddingLeft="@dimen/LinearLayout_padding"
         android:orientation="vertical"
         android:id="@+id/homeGroup"
         tools:context="com.example.android.ScienceQuiz.MainActivity">
@@ -18,9 +18,9 @@ android:id="@+id/myScroll">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="@dimen/large_text_size"
             android:textStyle="bold"
-            android:textColor="#004D40"
+            android:textColor="@color/headingText"
             android:text="@string/quiz_title"/>
 
 
@@ -28,34 +28,35 @@ android:id="@+id/myScroll">
                 android:id="@+id/lightbulb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/imageview_padding"
+                android:layout_marginRight="@dimen/imageview_padding"
                 android:src="@drawable/lightoff"
+                android:contentDescription="Light Bulb"
                 android:layout_gravity="center_horizontal"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="20sp"
+            android:paddingTop="@dimen/textview_padding"
+            android:textSize="@dimen/medium_text_size"
             android:text="@string/question1"/>
 
         <EditText
             android:id="@+id/quiz_answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/edittext_toppadding"
+            android:layout_marginLeft="@dimen/edittext_sidepadding"
+            android:layout_marginRight="@dimen/edittext_sidepadding"
+            android:textSize="@dimen/small_text_size"
             android:focusableInTouchMode="true"
             android:hint="@string/answer_hint"/>
 
         <TextView
             android:id="@+id/answer1"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -64,37 +65,39 @@ android:id="@+id/myScroll">
             android:id="@+id/question_2_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="20sp"
+            android:paddingTop="@dimen/small_text_size"
+            android:textSize="@dimen/medium_text_size"
             android:text="@string/question2"/>
 
             <CheckBox
                 android:id="@+id/quiz_answer_2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"
-                android:paddingLeft="16dp"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_marginLeft="@dimen/checkbox_margin"
+                android:paddingLeft="@dimen/checkbox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question2a"
                 />
 
             <CheckBox
                 android:id="@+id/quiz_answer_2d"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:paddingLeft="16dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_marginLeft="@dimen/checkbox_margin"
+                android:paddingLeft="@dimen/checkbox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question2d"
                 />
             <CheckBox
                 android:id="@+id/quiz_answer_2b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:paddingLeft="16dp"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_marginLeft="@dimen/checkbox_margin"
+                android:paddingLeft="@dimen/checkbox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question2b"
                 />
 
@@ -102,24 +105,26 @@ android:id="@+id/myScroll">
                 android:id="@+id/quiz_answer_2e"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:paddingLeft="16dp"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_marginLeft="@dimen/checkbox_margin"
+                android:paddingLeft="@dimen/checkbox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question2e"
                 />
             <CheckBox
                 android:id="@+id/quiz_answer_2c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:paddingLeft="16dp"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_marginLeft="@dimen/checkbox_margin"
+                android:paddingLeft="@dimen/checkbox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question2c"
                 />
         <TextView
             android:id="@+id/answer2"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -127,24 +132,24 @@ android:id="@+id/myScroll">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="20sp"
+            android:paddingTop="@dimen/textview_padding"
+            android:textSize="@dimen/medium_text_size"
             android:text="@string/question3"/>
 
         <EditText
             android:id="@+id/quiz_answer_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/edittext_sidepadding"
+            android:layout_marginRight="@dimen/edittext_sidepadding"
+            android:textSize="@dimen/small_text_size"
             android:focusableInTouchMode="true"
             android:hint="@string/answer_hint"/>
 
         <TextView
             android:id="@+id/answer3"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -152,8 +157,8 @@ android:id="@+id/myScroll">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="20sp"
+            android:paddingTop="@dimen/textview_padding"
+            android:textSize="@dimen/medium_text_size"
             android:text="@string/question4"/>
 
         <RadioGroup
@@ -165,9 +170,9 @@ android:id="@+id/myScroll">
                 android:id="@+id/quiz_answer_4a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
                 android:textSize="16sp"
                 android:text="@string/question4a"/>
 
@@ -175,37 +180,37 @@ android:id="@+id/myScroll">
                 android:id="@+id/quiz_answer_4b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
-                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question4b"/>
 
             <RadioButton
                 android:id="@+id/quiz_answer_4c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
-                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question4c"/>
 
             <RadioButton
                 android:id="@+id/quiz_answer_4d"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
-                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question4d"/>
 
         </RadioGroup>
         <TextView
             android:id="@+id/answer4"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -213,24 +218,24 @@ android:id="@+id/myScroll">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="20sp"
+            android:paddingTop="@dimen/textview_padding"
+            android:textSize="@dimen/medium_text_size"
             android:text="@string/question5"/>
 
         <EditText
             android:id="@+id/quiz_answer_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/edittext_sidepadding"
+            android:layout_marginRight="@dimen/edittext_sidepadding"
+            android:textSize="@dimen/small_text_size"
             android:focusableInTouchMode="true"
             android:hint="@string/answer_hint"/>
 
         <TextView
             android:id="@+id/answer5"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -238,8 +243,8 @@ android:id="@+id/myScroll">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:paddingTop="16dp"
+            android:textSize="@dimen/medium_text_size"
+            android:paddingTop="@dimen/textview_padding"
             android:text="@string/question6"/>
 
         <RadioGroup
@@ -251,27 +256,27 @@ android:id="@+id/myScroll">
                 android:id="@+id/quiz_answer_6a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
-                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question6a"/>
 
             <RadioButton
                 android:id="@+id/quiz_answer_6b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:paddingLeft="8dp"
-                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/radiobox_padding"
+                android:layout_marginTop="@dimen/radiobox_padding_internal"
+                android:paddingLeft="@dimen/radiobox_padding_internal"
+                android:textSize="@dimen/small_text_size"
                 android:text="@string/question6b"/>
         </RadioGroup>
 
         <TextView
             android:id="@+id/answer6"
-            android:layout_marginLeft="16dp"
-            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total_empty"/>
@@ -279,7 +284,7 @@ android:id="@+id/myScroll">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/small_text_size"
             android:orientation="horizontal">
 
             <Button
@@ -305,7 +310,7 @@ android:id="@+id/myScroll">
             android:id="@+id/Total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
+            android:paddingTop="@dimen/small_text_size"
             android:text="@string/total_empty"/>
 
     </LinearLayout>
