@@ -1,140 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/myScroll">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myScroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <LinearLayout
+        android:id="@+id/homeGroup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/LinearLayout_padding"
-        android:paddingLeft="@dimen/LinearLayout_padding"
         android:orientation="vertical"
-        android:id="@+id/homeGroup"
+        android:paddingLeft="@dimen/LinearLayout_padding"
+        android:paddingTop="@dimen/LinearLayout_padding"
         tools:context="com.example.android.ScienceQuiz.MainActivity">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/large_text_size"
-            android:textStyle="bold"
+            android:text="@string/quiz_title"
             android:textColor="@color/headingText"
-            android:text="@string/quiz_title"/>
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
 
 
-            <ImageView
-                android:id="@+id/lightbulb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/imageview_padding"
-                android:layout_marginRight="@dimen/imageview_padding"
-                android:src="@drawable/lightoff"
-                android:contentDescription="Light Bulb"
-                android:layout_gravity="center_horizontal"/>
-
+        <ImageView
+            android:id="@+id/lightbulb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/imageview_padding"
+            android:layout_marginTop="@dimen/imageview_padding"
+            android:contentDescription="Light Bulb"
+            android:src="@drawable/lightoff" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/textview_padding"
-            android:textSize="@dimen/medium_text_size"
-            android:text="@string/question1"/>
+            android:text="@string/question1"
+            android:textSize="@dimen/medium_text_size" />
 
         <EditText
             android:id="@+id/quiz_answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/edittext_toppadding"
             android:layout_marginLeft="@dimen/edittext_sidepadding"
             android:layout_marginRight="@dimen/edittext_sidepadding"
-            android:textSize="@dimen/small_text_size"
+            android:layout_marginTop="@dimen/edittext_toppadding"
             android:focusableInTouchMode="true"
-            android:hint="@string/answer_hint"/>
+            android:hint="@string/answer_hint"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:id="@+id/answer1"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:id="@+id/question_2_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/small_text_size"
-            android:textSize="@dimen/medium_text_size"
-            android:text="@string/question2"/>
+            android:text="@string/question2"
+            android:textSize="@dimen/medium_text_size" />
 
-            <CheckBox
-                android:id="@+id/quiz_answer_2a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/checkbox_margin"
-                android:layout_marginLeft="@dimen/checkbox_margin"
-                android:paddingLeft="@dimen/checkbox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question2a"
-                />
-
-            <CheckBox
-                android:id="@+id/quiz_answer_2d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/checkbox_margin"
-                android:layout_marginLeft="@dimen/checkbox_margin"
-                android:paddingLeft="@dimen/checkbox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question2d"
-                />
-            <CheckBox
-                android:id="@+id/quiz_answer_2b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/checkbox_margin"
-                android:layout_marginLeft="@dimen/checkbox_margin"
-                android:paddingLeft="@dimen/checkbox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question2b"
-                />
-
-            <CheckBox
-                android:id="@+id/quiz_answer_2e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/checkbox_margin"
-                android:layout_marginLeft="@dimen/checkbox_margin"
-                android:paddingLeft="@dimen/checkbox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question2e"
-                />
-            <CheckBox
-                android:id="@+id/quiz_answer_2c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/checkbox_margin"
-                android:layout_marginLeft="@dimen/checkbox_margin"
-                android:paddingLeft="@dimen/checkbox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question2c"
-                />
-        <TextView
-            android:id="@+id/answer2"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
+        <CheckBox
+            android:id="@+id/quiz_answer_2a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/checkbox_margin"
+            android:layout_marginTop="@dimen/checkbox_margin"
+            android:paddingLeft="@dimen/checkbox_padding_internal"
+            android:text="@string/question2a"
+            android:textSize="@dimen/small_text_size" />
+
+        <CheckBox
+            android:id="@+id/quiz_answer_2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin"
+            android:layout_marginTop="@dimen/checkbox_margin"
+            android:paddingLeft="@dimen/checkbox_padding_internal"
+            android:text="@string/question2d"
+            android:textSize="@dimen/small_text_size" />
+
+        <CheckBox
+            android:id="@+id/quiz_answer_2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin"
+            android:layout_marginTop="@dimen/checkbox_margin"
+            android:paddingLeft="@dimen/checkbox_padding_internal"
+            android:text="@string/question2b"
+            android:textSize="@dimen/small_text_size" />
+
+        <CheckBox
+            android:id="@+id/quiz_answer_2e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin"
+            android:layout_marginTop="@dimen/checkbox_margin"
+            android:paddingLeft="@dimen/checkbox_padding_internal"
+            android:text="@string/question2e"
+            android:textSize="@dimen/small_text_size" />
+
+        <CheckBox
+            android:id="@+id/quiz_answer_2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin"
+            android:layout_marginTop="@dimen/checkbox_margin"
+            android:paddingLeft="@dimen/checkbox_padding_internal"
+            android:text="@string/question2c"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/textview_padding"
-            android:textSize="@dimen/medium_text_size"
-            android:text="@string/question3"/>
+            android:text="@string/question3"
+            android:textSize="@dimen/medium_text_size" />
 
         <EditText
             android:id="@+id/quiz_answer_3"
@@ -142,29 +139,29 @@ android:id="@+id/myScroll">
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/edittext_sidepadding"
             android:layout_marginRight="@dimen/edittext_sidepadding"
-            android:textSize="@dimen/small_text_size"
             android:focusableInTouchMode="true"
-            android:hint="@string/answer_hint"/>
+            android:hint="@string/answer_hint"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:id="@+id/answer3"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/textview_padding"
-            android:textSize="@dimen/medium_text_size"
-            android:text="@string/question4"/>
+            android:text="@string/question4"
+            android:textSize="@dimen/medium_text_size" />
 
         <RadioGroup
+            android:id="@+id/question_4_group"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/question_4_group">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/quiz_answer_4a"
@@ -173,8 +170,8 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="16sp"
-                android:text="@string/question4a"/>
+                android:text="@string/question4a"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/quiz_answer_4b"
@@ -183,8 +180,8 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question4b"/>
+                android:text="@string/question4b"
+                android:textSize="@dimen/small_text_size" />
 
             <RadioButton
                 android:id="@+id/quiz_answer_4c"
@@ -193,8 +190,8 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question4c"/>
+                android:text="@string/question4c"
+                android:textSize="@dimen/small_text_size" />
 
             <RadioButton
                 android:id="@+id/quiz_answer_4d"
@@ -203,24 +200,25 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question4d"/>
+                android:text="@string/question4d"
+                android:textSize="@dimen/small_text_size" />
 
         </RadioGroup>
+
         <TextView
             android:id="@+id/answer4"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/textview_padding"
-            android:textSize="@dimen/medium_text_size"
-            android:text="@string/question5"/>
+            android:text="@string/question5"
+            android:textSize="@dimen/medium_text_size" />
 
         <EditText
             android:id="@+id/quiz_answer_5"
@@ -228,24 +226,24 @@ android:id="@+id/myScroll">
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/edittext_sidepadding"
             android:layout_marginRight="@dimen/edittext_sidepadding"
-            android:textSize="@dimen/small_text_size"
             android:focusableInTouchMode="true"
-            android:hint="@string/answer_hint"/>
+            android:hint="@string/answer_hint"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:id="@+id/answer5"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/medium_text_size"
             android:paddingTop="@dimen/textview_padding"
-            android:text="@string/question6"/>
+            android:text="@string/question6"
+            android:textSize="@dimen/medium_text_size" />
 
         <RadioGroup
             android:id="@+id/question_6_group"
@@ -259,8 +257,8 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question6a"/>
+                android:text="@string/question6a"
+                android:textSize="@dimen/small_text_size" />
 
             <RadioButton
                 android:id="@+id/quiz_answer_6b"
@@ -269,17 +267,17 @@ android:id="@+id/myScroll">
                 android:layout_marginLeft="@dimen/radiobox_padding"
                 android:layout_marginTop="@dimen/radiobox_padding_internal"
                 android:paddingLeft="@dimen/radiobox_padding_internal"
-                android:textSize="@dimen/small_text_size"
-                android:text="@string/question6b"/>
+                android:text="@string/question6b"
+                android:textSize="@dimen/small_text_size" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/answer6"
-            android:layout_marginLeft="@dimen/textview_padding"
-            android:textSize="@dimen/small_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/total_empty"/>
+            android:layout_marginLeft="@dimen/textview_padding"
+            android:text="@string/total_empty"
+            android:textSize="@dimen/small_text_size" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -291,18 +289,18 @@ android:id="@+id/myScroll">
                 android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text = "@string/submit"
                 android:layout_gravity="center_horizontal"
-                android:onClick="checkAnswers"/>
+                android:layout_weight="1"
+                android:onClick="checkAnswers"
+                android:text="@string/submit" />
 
             <Button
                 android:id="@+id/reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_horizontal"
-                android:text = "@string/reset"/>
+                android:layout_weight="1"
+                android:text="@string/reset" />
 
         </LinearLayout>
 
@@ -311,7 +309,7 @@ android:id="@+id/myScroll">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/small_text_size"
-            android:text="@string/total_empty"/>
+            android:text="@string/total_empty" />
 
     </LinearLayout>
 </ScrollView>
